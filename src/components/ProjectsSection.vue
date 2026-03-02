@@ -33,6 +33,8 @@
   </section>
 </template>
 
+
+<div>dg</div>
 <script setup>
 const projects = [
   {
