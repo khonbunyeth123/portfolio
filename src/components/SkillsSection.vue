@@ -32,6 +32,13 @@
 <script setup>
 const skills = [
   {
+    icon: '🐘',
+    name: 'PHP',
+    desc: 'Backend development, REST APIs, authentication, database systems',
+    tags: ['PHP', 'MySQL', 'Laravel', 'API'],
+    level: 90,
+  },
+  {
     icon: '⚡',
     name: 'Vue.js',
     desc: 'Composition API, Pinia, Vue Router, Nuxt.js',
