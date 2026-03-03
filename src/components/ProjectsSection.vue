@@ -16,18 +16,32 @@
         :class="{ featured: i === 0 }"
       >
         <div class="project-bg">{{ String(i + 1).padStart(2, '0') }}</div>
-        <div class="project-gradient" :style="{ background: project.gradient }" />
+
+        <div
+          class="project-gradient"
+          :style="{ background: project.gradient }"
+        ></div>
 
         <div class="project-info">
-          <div class="project-num">{{ String(i + 1).padStart(2, '0') }}{{ i === 0 ? ' / Featured' : '' }}</div>
+          <div class="project-num">
+            {{ String(i + 1).padStart(2, '0') }}{{ i === 0 ? ' / Featured' : '' }}
+          </div>
+
           <h3 class="project-title">{{ project.title }}</h3>
           <p class="project-desc">{{ project.desc }}</p>
+
           <div class="project-tech">
             <span v-for="tech in project.tech" :key="tech">{{ tech }}</span>
           </div>
         </div>
-        <a :href="project.url" class="project-link" target="_blank" rel="noopener">↗</a>
-      </div>
+
+        <a
+          :href="project.url"
+          class="project-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >↗</a>
+</div>
     </div>
   </section>
 </template>
