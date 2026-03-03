@@ -26,15 +26,11 @@
             <span v-for="tech in project.tech" :key="tech">{{ tech }}</span>
           </div>
         </div>
-
         <a :href="project.url" class="project-link" target="_blank" rel="noopener">↗</a>
       </div>
     </div>
   </section>
 </template>
-
-
-<div>dg</div>
 <script setup>
 const projects = [
   {
