@@ -2,8 +2,8 @@
   <div class="marquee-section">
     <div class="marquee-track">
       <div
-        v-for="item in [...items, ...items]"
-        :key="item + Math.random()"
+        v-for="(item, i) in [...items, ...items]"
+        :key="i"
         class="marquee-item"
       >
         <span>{{ item }}</span>
