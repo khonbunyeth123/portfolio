@@ -29,10 +29,6 @@
         <span class="corner bl" />
         <span class="corner br" />
       </div>
-      <!-- <div class="accent-block">
-        <div class="num">KH</div>
-        <div class="lbl">Based in<br />Cambodia</div>
-      </div> -->
     </div>
   </section>
 </template>
@@ -109,37 +105,6 @@
 .corner.tr { top: 12px; right: 12px;  border-width: 2px 2px 0 0; }
 .corner.bl { bottom: 12px; left: 12px;  border-width: 0 0 2px 2px; }
 .corner.br { bottom: 12px; right: 12px; border-width: 0 2px 2px 0; }
-
-/* Accent badge */
-/* .accent-block {
-  position: absolute;
-  right: -2rem;
-  bottom: -2rem;
-  width: 120px;
-  height: 120px;
-  background: var(--accent);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-} */
-
-/* .accent-block .num {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.5rem;
-  color: var(--bg);
-  line-height: 1;
-}
-
-.accent-block .lbl {
-  font-family: 'DM Mono', monospace;
-  font-size: 0.5rem;
-  color: var(--bg);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-} */
 
 @media (max-width: 768px) {
   #about {
