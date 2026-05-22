@@ -32,7 +32,7 @@ const socialIcons = {
         </p>
 
         <div class="flex flex-wrap gap-3">
-          <a href="/Khon Bunyeth.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-[#5fa6ed] px-5 py-3 text-sm font-semibold text-white shadow-sm shadow-[#5fa6ed]/40 transition hover:-translate-y-0.5 hover:bg-[#4d95db]">
+          <a :href="profile.cvUrl" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-[#5fa6ed] px-5 py-3 text-sm font-semibold text-white shadow-sm shadow-[#5fa6ed]/40 transition hover:-translate-y-0.5 hover:bg-[#4d95db]">
             <ArrowDownTrayIcon class="h-4 w-4"></ArrowDownTrayIcon>
             Download CV
           </a>

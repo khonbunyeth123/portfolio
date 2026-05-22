@@ -1,3 +1,5 @@
+import avatarImg from '../assets/img/img.jpg'
+
 export const profile = {
   name: 'KHON BUNYETH',
   role: 'Full Stack Developer',
@@ -5,8 +7,8 @@ export const profile = {
     'I build fast, clean, and user-focused digital products with Vue, modern tooling, and practical backend systems.',
   location: 'Phnom Penh, Cambodia',
   email: 'bunyeth664@gmail.com',
-  cvUrl: '#',
-  avatar: 'src/assets/img/img.jpg ',
+  cvUrl: '/Khon%20Bunyeth.pdf',
+  avatar: avatarImg,
   socials: [
     { name: 'Facebook', url: 'https://www.facebook.com/khon.bunyeth', key: 'facebook' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/khon-bunyeth-93b628310/', key: 'linkedin' },
