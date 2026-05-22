@@ -1,5 +1,3 @@
-import avatarImg from '../assets/img/img.jpg'
-
 export const profile = {
   name: 'KHON BUNYETH',
   role: 'Full Stack Developer',
@@ -8,7 +6,7 @@ export const profile = {
   location: 'Phnom Penh, Cambodia',
   email: 'bunyeth664@gmail.com',
   cvUrl: '/Khon%20Bunyeth.pdf',
-  avatar: avatarImg,
+  avatar: '/img/img.jpg',
   socials: [
     { name: 'Facebook', url: 'https://www.facebook.com/khon.bunyeth', key: 'facebook' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/khon-bunyeth-93b628310/', key: 'linkedin' },
