@@ -1,11 +1,28 @@
 <script setup>
-import { onBeforeUnmount, ref } from 'vue'
+import { onBeforeUnmount, reactive, ref } from 'vue'
 import { EnvelopeIcon } from '../icons'
 defineProps({ profile: Object })
 
 const previewImage = ref('')
 const isDragging = ref(false)
 const fileError = ref('')
+const form = reactive({ name: '', email: '', message: '' })
+const submitError = ref('')
+
+function handleSubmit() {
+  if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+    submitError.value = 'Please fill in name, email, and message.'
+    return
+  }
+
+  submitError.value = ''
+  const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`)
+  const body = encodeURIComponent(
+    `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
+  )
+
+  window.location.href = `mailto:bunyeth664@gmail.com?subject=${subject}&body=${body}`
+}
 
 function setPreview(file) {
   if (!file) return
@@ -45,10 +62,11 @@ onBeforeUnmount(() => {
           {{ profile.email }}
         </a>
       </div>
-      <form data-reveal class="translate-y-6 space-y-4 rounded-2xl border border-slate-200 bg-white p-6 opacity-0 shadow-sm transition duration-700 dark:border-slate-700 dark:bg-slate-800" @submit.prevent>
-        <input type="text" placeholder="Name" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-[#5fa6ed] dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100" />
-        <input type="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-[#5fa6ed] dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100" />
-        <textarea rows="5" placeholder="Message" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-[#5fa6ed] dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100"></textarea>
+      <form data-reveal class="translate-y-6 space-y-4 rounded-2xl border border-slate-200 bg-white p-6 opacity-0 shadow-sm transition duration-700 dark:border-slate-700 dark:bg-slate-800" @submit.prevent="handleSubmit">
+        <input v-model="form.name" type="text" placeholder="Name" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-[#5fa6ed] dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100" />
+        <input v-model="form.email" type="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-[#5fa6ed] dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100" />
+        <textarea v-model="form.message" rows="5" placeholder="Message" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-[#5fa6ed] dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100"></textarea>
+        <p v-if="submitError" class="text-sm text-red-500">{{ submitError }}</p>
         <p v-if="fileError" class="text-sm text-red-500">{{ fileError }}</p>
         <button type="submit" class="rounded-xl bg-[#5fa6ed] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#4d95db]">Send Message</button>
       </form>
