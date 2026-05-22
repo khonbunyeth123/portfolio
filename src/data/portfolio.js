@@ -1,5 +1,5 @@
 export const profile = {
-  name: 'Bunyeth',
+  name: 'KHON BUNYETH',
   role: 'Full Stack Developer',
   intro:
     'I build fast, clean, and user-focused digital products with Vue, modern tooling, and practical backend systems.',
@@ -8,8 +8,8 @@ export const profile = {
   cvUrl: '#',
   avatar: 'src/assets/img/img.jpg ',
   socials: [
-    { name: 'GitHub', url: 'https://github.com', key: 'github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com', key: 'linkedin' },
+    { name: 'Facebook', url: 'https://www.facebook.com/khon.bunyeth', key: 'facebook' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/khon-bunyeth-93b628310/', key: 'linkedin' },
     { name: 'Mail', url: 'mailto:bunyeth664@gmail.com', key: 'mail' }
   ]
 }
