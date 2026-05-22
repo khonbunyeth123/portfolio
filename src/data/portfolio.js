@@ -1,8 +1,8 @@
 export const profile = {
   name: 'KHON BUNYETH',
-  role: 'Full Stack Developer',
+  role: 'Frontend & Web Developer',
   intro:
-    'I build fast, clean, and user-focused digital products with Vue, modern tooling, and practical backend systems.',
+    'Computer Science student passionate about building clean and responsive web applications using Vue, PHP, and modern web technologies.',
   location: 'Phnom Penh, Cambodia',
   email: 'bunyeth664@gmail.com',
   cvUrl: '/Khon%20Bunyeth.pdf',
@@ -15,36 +15,44 @@ export const profile = {
 }
 
 export const skills = [
-  { name: 'Vue.js', level: 92, key: 'vue' },
-  { name: 'Tailwind CSS', level: 88, key: 'palette' },
-  { name: 'JavaScript', level: 90, key: 'code' },
-  { name: 'PHP', level: 78, key: 'server' },
-  { name: 'MySQL', level: 80, key: 'database' },
-  { name: 'GitHub', level: 87, key: 'github' }
+  { name: 'Vue.js', level: 70, key: 'vue' },
+  { name: 'Tailwind CSS', level: 75, key: 'palette' },
+  { name: 'JavaScript', level: 68, key: 'code' },
+  { name: 'PHP', level: 72, key: 'server' },
+  { name: 'MySQL', level: 65, key: 'database' },
+  { name: 'GitHub', level: 60, key: 'github' }
 ]
 
 export const projects = [
   {
-    title: 'SaaS Admin Dashboard',
-    description: 'Analytics-focused dashboard with role access, charts, and responsive management tools.',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80',
-    tags: ['Vue 3', 'Tailwind', 'Chart.js'],
+    title: 'HR Management System',
+    description:
+      'Employee management and attendance tracking system with admin dashboard and employee records management.',
+    image:
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
+    tags: ['PHP', 'MySQL', 'JavaScript'],
     liveUrl: '#',
     githubUrl: '#'
   },
+
   {
-    title: 'E-Commerce Platform',
-    description: 'Modern storefront with product filters, cart flow, and secure checkout experience.',
-    image: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80',
-    tags: ['Vue', 'PHP', 'MySQL'],
+    title: 'Attendance Management App',
+    description:
+      'Simple attendance management application for tracking employee check-in and daily attendance records.',
+    image:
+      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
+    tags: ['Vue.js', 'Tailwind CSS', 'PHP'],
     liveUrl: '#',
     githubUrl: '#'
   },
+
   {
-    title: 'Portfolio CMS',
-    description: 'Content-managed portfolio editor for updating projects, timelines, and social links.',
-    image: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1200&q=80',
-    tags: ['Vue Router', 'REST API', 'Tailwind'],
+    title: 'Personal Portfolio Website',
+    description:
+      'Modern responsive portfolio website built with Vue and Tailwind CSS to showcase projects and technical skills.',
+    image:
+      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
+    tags: ['Vue.js', 'Tailwind CSS', 'Responsive Design'],
     liveUrl: '#',
     githubUrl: '#'
   }
@@ -52,21 +60,21 @@ export const projects = [
 
 export const experiences = [
   {
-    company: 'Nova Tech Studio',
-    position: 'Frontend Developer',
-    date: '2024 - Present',
-    description: 'Built reusable Vue components, improved Lighthouse performance, and shipped polished UI systems.'
+    company: 'Ezecom Co., Ltd.',
+    position: 'Trainee — Technical Service',
+    date: 'Jul 2024 - Oct 2024',
+    description: 'Completed a 3-month internship in technical support under the Technical Department. Recognized as hardworking, dedicated, and trustworthy by HR Operations.'
   },
   {
-    company: 'Bright Web Agency',
-    position: 'Web Developer',
-    date: '2022 - 2024',
-    description: 'Delivered client websites, integrated APIs, and implemented responsive frontends.'
+    company: 'Norton University',
+    position: 'Bachelor of Computer Science',
+    date: '2021 - Present',
+    description: 'Year 4 student focused on web development, databases, and software engineering. Built an HR Management System using PHP and MySQL as a capstone project.'
   },
   {
-    company: 'Code Camp University',
-    position: 'Computer Science',
-    date: '2018 - 2022',
-    description: 'Focused on software engineering principles, databases, and web architecture.'
+    company: 'Bun Rany Hun Sen Ampovorn Chumnik',
+    position: 'High School Diploma',
+    date: '2018 - 2021',
+    description: 'Completed secondary education with a foundation in mathematics and sciences.'
   }
 ]
