@@ -49,7 +49,7 @@ onBeforeUnmount(() => {
 <template>
   <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-700 dark:bg-slate-900/80">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-      <button class="text-xl font-bold text-slate-900 dark:text-slate-50" @click="goTo('home')">Bunyeth</button>
+      <button class="text-xl font-bold text-slate-900 dark:text-slate-50" @click="goTo('home')">BUNYETH</button>
 
       <div class="hidden items-center gap-6 md:flex">
         <button
