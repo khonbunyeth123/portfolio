@@ -4,13 +4,13 @@ export const profile = {
   intro:
     'I build fast, clean, and user-focused digital products with Vue, modern tooling, and practical backend systems.',
   location: 'Phnom Penh, Cambodia',
-  email: 'hello@bunyeth.dev',
+  email: 'bunyeth664@gmail.com',
   cvUrl: '#',
-  avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80',
+  avatar: 'src/assets/img/img.jpg ',
   socials: [
     { name: 'GitHub', url: 'https://github.com', key: 'github' },
     { name: 'LinkedIn', url: 'https://linkedin.com', key: 'linkedin' },
-    { name: 'Mail', url: 'mailto:hello@bunyeth.dev', key: 'mail' }
+    { name: 'Mail', url: 'mailto:bunyeth664@gmail.com', key: 'mail' }
   ]
 }
 

@@ -3,5 +3,27 @@ import { ArrowDownTrayIcon, EnvelopeIcon } from '../icons'
 defineProps({ profile: Object })
 </script>
 <template>
-<section id="home" class="relative overflow-hidden px-4 pb-20 pt-16 sm:px-6 lg:px-8"><div class="absolute -left-10 top-12 h-40 w-40 rounded-full bg-[#5fa6ed]/20 blur-2xl" /><div class="absolute -right-16 bottom-8 h-56 w-56 rounded-full bg-cyan-200/30 blur-3xl dark:bg-cyan-500/20" /><div data-reveal class="mx-auto grid max-w-6xl translate-y-6 grid-cols-1 items-center gap-12 opacity-0 transition duration-700 md:grid-cols-2"><div class="space-y-6"><p class="inline-flex rounded-full border border-[#5fa6ed]/30 bg-[#5fa6ed]/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#2f6da9] dark:text-[#9bcbf7]">Available for work</p><h1 class="text-4xl font-bold leading-tight text-slate-900 dark:text-white sm:text-5xl">{{ profile.name }}<br /><span class="text-[#5fa6ed]">{{ profile.role }}</span></h1><p class="max-w-xl text-base leading-relaxed text-slate-600 dark:text-slate-300">{{ profile.intro }}</p><div class="flex flex-wrap gap-3"><a :href="profile.cvUrl" class="inline-flex items-center gap-2 rounded-xl bg-[#5fa6ed] px-5 py-3 text-sm font-semibold text-white shadow-sm shadow-[#5fa6ed]/40 transition hover:-translate-y-0.5 hover:bg-[#4d95db]"><ArrowDownTrayIcon class="h-4 w-4"/>Download CV</a><a href="#contact" class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#5fa6ed] hover:text-[#5fa6ed] dark:border-slate-600 dark:text-slate-200">Let’s talk</a></div><div class="flex gap-3"><a v-for="social in profile.socials" :key="social.name" :href="social.url" class="inline-flex items-center gap-1 rounded-lg border border-slate-200 px-3 py-2 text-xs text-slate-600 transition hover:border-[#5fa6ed] hover:text-[#5fa6ed] dark:border-slate-700 dark:text-slate-300"><EnvelopeIcon class="h-4 w-4"/>{{ social.name }}</a></div></div><div class="mx-auto w-full max-w-md"><div class="rounded-3xl border border-slate-200 bg-white p-3 shadow-xl shadow-slate-200/70 dark:border-slate-700 dark:bg-slate-800 dark:shadow-slate-900/40"><img :src="profile.avatar" alt="Profile" class="h-[420px] w-full rounded-2xl object-cover" loading="lazy" /></div></div></div></section>
+<section id="home" class="relative overflow-hidden px-4 pb-20 pt-16 sm:px-6 lg:px-8">
+  <div class="absolute -left-10 top-12 h-40 w-40 rounded-full bg-[#5fa6ed]/20 blur-2xl"/>
+  <div class="absolute -right-16 bottom-8 h-56 w-56 rounded-full bg-cyan-200/30 blur-3xl dark:bg-cyan-500/20" />
+  <div data-reveal class="mx-auto grid max-w-6xl translate-y-6 grid-cols-1 items-center gap-12 opacity-0 transition duration-700 md:grid-cols-2">
+    <div class="space-y-6">
+      <p class="inline-flex rounded-full border border-[#5fa6ed]/30 bg-[#5fa6ed]/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#2f6da9] dark:text-[#9bcbf7]">Available for work</p>
+      <h1 class="text-4xl font-bold leading-tight text-slate-900 dark:text-white sm:text-5xl">{{ profile.name }}<br /><span class="text-[#5fa6ed]">{{ profile.role }}</span></h1>
+      <p class="max-w-xl text-base leading-relaxed text-slate-600 dark:text-slate-300">{{ profile.intro }}</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="../../../public/Khon Bunyeth.pdf" class="inline-flex items-center gap-2 rounded-xl bg-[#5fa6ed] px-5 py-3 text-sm font-semibold text-white shadow-sm shadow-[#5fa6ed]/40 transition hover:-translate-y-0.5 hover:bg-[#4d95db]">
+          <ArrowDownTrayIcon class="h-4 w-4"/>Download CV</a>
+        <a href="#contact" class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#5fa6ed] hover:text-[#5fa6ed] dark:border-slate-600 dark:text-slate-200">Let’s talk</a>
+      </div>
+      <div class="flex gap-3"><a v-for="social in profile.socials" :key="social.name" :href="social.url" class="inline-flex items-center gap-1 rounded-lg border border-slate-200 px-3 py-2 text-xs text-slate-600 transition hover:border-[#5fa6ed] hover:text-[#5fa6ed] dark:border-slate-700 dark:text-slate-300">
+        <EnvelopeIcon class="h-4 w-4"/>{{ social.name }}</a>
+      </div>
+    </div>
+    <div class="mx-auto w-full max-w-md">
+      <div class="rounded-3xl border border-slate-200 bg-white p-3 shadow-xl shadow-slate-200/70 dark:border-slate-700 dark:bg-slate-800 dark:shadow-slate-900/40"><img :src="profile.avatar" alt="Profile" class="h-[420px] w-full rounded-2xl object-cover" loading="lazy" />
+      </div>
+      </div>
+      </div>
+  </section>
 </template>

@@ -18,6 +18,6 @@ useReveal()
     <SkillsSection :skills="skills" />
     <ProjectsSection :projects="projects" />
     <TimelineSection :experiences="experiences" />
-    <ContactSection :profile="profile" />
+    <ContactSection :profile="profile" /> 
   </div>
 </template>
