@@ -32,7 +32,7 @@ export const projects = [
       'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
     tags: ['PHP', 'MySQL', 'JavaScript'],
     liveUrl: '#',
-    githubUrl: '#'
+    githubUrl: 'https://github.com/khonbunyeth123/HR_Management_System'
   },
 
   {
@@ -43,7 +43,7 @@ export const projects = [
       'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
     tags: ['Vue.js', 'Tailwind CSS', 'PHP'],
     liveUrl: '#',
-    githubUrl: '#'
+    githubUrl: 'https://github.com/khonbunyeth123/mobile_hrm_doorstep'
   },
 
   {
@@ -54,7 +54,7 @@ export const projects = [
       'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
     tags: ['Vue.js', 'Tailwind CSS', 'Responsive Design'],
     liveUrl: '#',
-    githubUrl: '#'
+    githubUrl: 'https://github.com/khonbunyeth123/portfolio'
   }
 ]
 

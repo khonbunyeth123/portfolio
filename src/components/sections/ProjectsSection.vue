@@ -16,11 +16,11 @@ defineProps({ projects: Array })
               <span v-for="tag in project.tags" :key="tag" class="rounded-full bg-[#5fa6ed]/15 px-2.5 py-1 text-xs font-medium text-[#2f6da9] dark:text-[#9bcbf7]">{{ tag }}</span>
             </div>
             <div class="flex gap-3">
-              <a :href="project.liveUrl" class="inline-flex items-center gap-1.5 rounded-lg bg-[#5fa6ed] px-3 py-2 text-xs font-semibold text-white transition hover:bg-[#4d95db]">
+              <!-- <a :href="project.liveUrl" class="inline-flex items-center gap-1.5 rounded-lg bg-[#5fa6ed] px-3 py-2 text-xs font-semibold text-white transition hover:bg-[#4d95db]">
                 <ArrowTopRightOnSquareIcon class="h-3.5 w-3.5"/>
                 Live Demo
-              </a>
-              <a :href="project.githubUrl" class="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 px-3 py-2 text-xs font-semibold text-slate-700 transition hover:border-[#5fa6ed] hover:text-[#5fa6ed] dark:border-slate-600 dark:text-slate-200">
+              </a> -->
+              <a :href="project.githubUrl" class="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 px-3 py-2 text-xs font-semibold text-slate-700 transition hover:border-[#5fa6ed] hover:text-[#5fa6ed] dark:border-slate-600 dark:text-slate-200" target="_blank">
                 <CodeBracketIcon class="h-3.5 w-3.5"/>
                 GitHub
               </a>
